@@ -35,10 +35,17 @@ changeImage1();
 changeImage2();
 
 
+const menuImg = document.querySelector('.menu__img');
+const menuClose = document.querySelector('.menu-close__btn');
+const menuList = document.querySelector('.menu__list');
 
+menuImg.addEventListener('click', ()=>{
+  menuList.classList.toggle('menu__list--open');
+});
 
-
-
+menuClose.addEventListener('click', ()=>{
+  menuList.classList.remove('menu__list--open');
+});
 
 
 
@@ -50,11 +57,51 @@ const swiper = new Swiper(".swiper-servises", {
   slidesPerView: 3,
   spaceBetween: 30,
   navigation: {
-  nextEl: ".swiper-button-next",
-  prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
-  
- });
+});
+
+
+
+
+function checkScreenWidth() {
+  if (window.innerWidth < 1050) {
+   
+    swiper.params.slidesPerView = 2;
+    swiper.update(); 
+  }
+}
+
+
+checkScreenWidth();
+window.addEventListener('resize', checkScreenWidth);
+
+
+function checkScreenWidt() {
+  if (window.innerWidth < 800) {
+    
+    swiper.destroy(true); 
+  }
+}
+
+
+
+checkScreenWidt();
+window.addEventListener('resize', checkScreenWidt);
+
+
+const buttons = document.querySelectorAll('[id="1"], [id="2"], [id="3"], [id="4"]');
+
+
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+   
+    window.location.href = 'send.html';
+  });
+});
+
+
 
  const swiper2 = new Swiper2(".swiper-events", {
   slidesPerView: 3,

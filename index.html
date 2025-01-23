@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style/reset.css">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -16,12 +14,17 @@
       <div class="header__inner">
         <div class="logo">
           <a href="#"> 
-          <img src="images/logo.svg" alt="logo">  
+          <img class="logo__img" src="images/logo.svg" alt="logo">  
           </a>
           <h1 class="logo-text">СеверСтройСервис</h1>
         </div>
         <nav class="menu">
-          <ul class="menu__list">
+          <ul class="menu__list ">
+            <li class="menu-close">
+              <button class="menu-close__btn">
+                <img src="images/menu-close.svg" alt="">
+              </button>
+            </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Новостройки</a>
             </li>
@@ -43,9 +46,22 @@
             <li class="menu__item">
               <a href="#" class="menu__link">Контакты</a>
             </li>
+            <li class="mobile-menu">
+              <ul class="mobile-tell">
+                <li>
+                  <a class="tell-number-menu" href="tel:88007073656">8 800 707 36-56</a>
+                </li>
+                <li>
+                  <p class="address-menu">г. Ессентуки, Крутой Туп., зд. 9, пом. 28</p>
+                </li>
+              </ul>
+            </li>
           </ul>
+          
         </nav>
             <a class="tell-number" href="tel:88007073656">8 800 707 36-56</a>
+            <a class="tell__img" href="tel:88007073656"><img src="images/tell.svg" alt=""></a>
+            <button class="menu__img"><img src="images/мenu.svg" alt=""></button>
       </div>
     
   </header>
@@ -175,41 +191,41 @@
                 <h2 class="title__swiper-servises" >
                   Ипотека от известных банков по выгодным условиям
                 </h2>
-                <a href="send.html" class="send">
-                  <button  class="btn__swiper-servises">
+                
+                  <button id="1" class="btn__swiper-servises">
                   Отправить заявку
                   </button>
-                </a>
+                
               </div>
               <div class="swiper-slide">
                 <h2 class="title__swiper-servises" >
                   Реализация материнского капитала на покупку жилья
                 </h2>
-                <a href="send.html" class="send">
-                  <button class="btn__swiper-servises">
+                
+                  <button id="2" class="btn__swiper-servises">
                   Отправить заявку
                   </button>
-                </a>
+                
               </div>
               <div class="swiper-slide">
                 <h2 class="title__swiper-servises" >
                   Супсидии на оплату жилья
                 </h2>
-                <a href="send.html" class="send">
-                  <button class="btn__swiper-servises">
+                
+                  <button  id="3" class="btn__swiper-servises">
                   Отправить заявку
                   </button>
-                </a>
+                
               </div>
               <div class="swiper-slide">
                 <h2 class="title__swiper-servises" >
                   Ипотека от известных банков по выгодным условиям
                 </h2>
-                <a href="send.html" class="send">
-                  <button class="btn__swiper-servises">
+                
+                  <button id="4" class="btn__swiper-servises">
                   Отправить заявку
                   </button>
-                 </a>
+                 
               </div>
 
               </div>
@@ -311,6 +327,7 @@
                 </li>
             </ul>
             </div>
+          
             <div class="footer-bye">
               <ul class="footer-bye__ul">
                 <li class="footer__li">
