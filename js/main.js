@@ -103,12 +103,12 @@ buttons.forEach(button => {
 
 
 
- const swiper2 = new Swiper2(".swiper-events", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  navigation: {
-  nextEl: ".swiper-button-next",
-  prevEl: ".swiper-button-prev",
-},
-direction: "horizontal",
-});
+//  const swiper = new Swiper2(".swiper-events", {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   navigation: {
+//   nextEl: ".swiper-button-next",
+//   prevEl: ".swiper-button-prev",
+// },
+// direction: "horizontal",
+// });
