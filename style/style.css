@@ -867,9 +867,6 @@ font-family: 'Gilroy-Light', sans-serif;
   .tell-number{
     display: none;
   }
-  .header{
-    
-  }
   .menu__img{
     display: inline;
   }
@@ -924,16 +921,6 @@ font-family: 'Gilroy-Light', sans-serif;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
-  }
-  .text-servises,
-  .swiper-navigation{
-    
-  }
-  
- 
-  .swiper-wrapper{
-    
-    
   }
 }
 
@@ -1084,7 +1071,5 @@ font-family: 'Gilroy-Light', sans-serif;
   .about-company{
     padding-top: 100px;
   }
-  .footer-build{
-    
-  }
+  
 }
